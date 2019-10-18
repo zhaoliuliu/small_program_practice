@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/search/main",
+    "pages/index/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小客场",
+    "navigationBarTextStyle": "black"
+  }
+}
