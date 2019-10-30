@@ -1,7 +1,7 @@
 <template>
     <div class="search-item-wrap" @click="onClick">
         <div class="search-item-icon">
-            {{icon}}
+            <van-icon name="qr"/>
         </div>
         <div class="search-item-text">
             <div class="search-item-tit">{{title}}</div>
@@ -53,10 +53,15 @@ export default {
 
 .search-item-text{
     margin-left: 10px;
+    width: 80%;
 }
 .search-item-tit{
     font-size: 14px;
     color: #333333; 
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
 }
 .search-item-subtext{
     font-size: 12px;

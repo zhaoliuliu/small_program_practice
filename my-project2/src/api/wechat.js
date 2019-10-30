@@ -1,12 +1,14 @@
 import { getOpenId } from "./index"
 
 export function getSetting(auth, onSuccess, onFail) {
+    console.log(auth)
     mpvue.getSetting({
         success(res) {
             // console.log(res)
             if (res.authSetting[`scope.${auth}`]) {
                 onSuccess(res)
             } else {
+                // console.log(999)
                 onFail(res)
             }
         },

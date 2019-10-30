@@ -1,12 +1,15 @@
 {
   "pages": [
-    "pages/search/main",
-    "pages/index/main"
+    "pages/index/main",
+    "pages/search/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "小客场",
     "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "van-icon": "vant-weapp/dist/icon/index"
   }
 }

@@ -10,7 +10,6 @@
         </div>
         <SearchTable :data="data.book" @onClick="onBookClick"
         />
-        <van-button type="primary">按钮</van-button>
     </div>
 </template>
 

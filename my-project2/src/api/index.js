@@ -49,3 +49,9 @@ export function search(params) {
     return get( `${API_URL}/book/search`, params)
 }
 
+// hotsearch
+export function hotsearch(params) {
+    return get( `${API_URL}/book/hot-search
+    `, params)
+}
+

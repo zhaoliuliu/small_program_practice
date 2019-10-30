@@ -1,6 +1,6 @@
 <template>
     <div class="tag-wrap" @click="onClick">
-        <div class="tag">{{text}}</div>
+        <div class="tag">{{text.title}}</div>
     </div>
 </template>
 
@@ -10,7 +10,7 @@ export default {
     components: {},
     props: {
         text: {
-            type: String,
+            type: Object,
             default: ''
         }
     },

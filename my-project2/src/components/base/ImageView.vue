@@ -14,12 +14,20 @@
       <img
       :class="round ? 'round image' : 'image'"
       :style="{ height }"
-      src="https://www.youbaobao.xyz/book/img/loading2.ae9e5924.jpeg"
       :mode="mode"
       :lazyLoad-load="lazyLoad"
       v-if="isLoading || error"
       class="image-view"
       />
+      <!-- <img
+      :class="round ? 'round image' : 'image'"
+      :style="{ height }"
+      src="https://www.youbaobao.xyz/book/img/loading2.ae9e5924.jpeg"
+      :mode="mode"
+      :lazyLoad-load="lazyLoad"
+      v-if="isLoading || error"
+      class="image-view"
+      /> -->
   </div>
 </template>
 
@@ -87,7 +95,6 @@ export default {
 }
 .image-view{
     width: 100%;
-    // border-radius: 50px; 
 }
 .round{
     border-radius: 50%; 

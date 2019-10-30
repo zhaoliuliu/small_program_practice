@@ -62,6 +62,8 @@ export default {
     display: flex;
     flex-flow: row wrap;
     .tag-group-inner{
+        max-width: 100%;
+        box-sizing: border-box;
         margin: 6px 6px 6px 0px;
     }
 }

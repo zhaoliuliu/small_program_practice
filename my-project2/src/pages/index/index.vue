@@ -102,7 +102,7 @@ export default {
   data() {
     return {
       isAuth: false,
-      hotSearch: '',
+      hotSearch: {},
       HomeCard: {
         bookList: [],
         num: 0,
@@ -161,8 +161,14 @@ export default {
       }
     },
     onSearchBarClick() {
+      console.log(this.hotSearch.keyword)
       // 跳转到搜索页面
-      this.$router.push("/pages/search/main")
+      this.$router.push({
+        path: "/pages/search/main",
+        query: {
+          hotSearchKey: this.hotSearch.keyword
+        }
+      })
     },
     onBookMoreClick() {
       console.log('BOOK onBookMoreClick')

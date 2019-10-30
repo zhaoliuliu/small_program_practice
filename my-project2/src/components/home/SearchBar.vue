@@ -95,9 +95,8 @@ export default {
   .search-bar-input{
     flex: 1;
     align-items: center;
-    // background: #f0f;
     border-radius: 20px;
-    margin: 0px 12px;
+    margin: 0px 12px 0px 8px;
   }
 }
 </style>
